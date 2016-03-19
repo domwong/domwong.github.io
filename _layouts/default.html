@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% if page.title %}
+      <title>{{site.name}} &mdash; {{page.title}}</title>
+    {% else %}
+      <title>{{site.name}}</title>
+    {% endif %}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@domwongtweets">
+    <meta name="twitter:title" content="{{site.name}}">
+    <meta name="twitter:description" content="{{site.description}}">
+    <meta name="twitter:image" content="{{site.url}}/assets/touch-icon.png">
+
+    <meta name="description" content="{{site.description}}">
+
+    <link rel="stylesheet" href="/assets/styles.css">
+
+  </head>
+
+  <body>
+    {{content}}
+  </body>
+</html>
